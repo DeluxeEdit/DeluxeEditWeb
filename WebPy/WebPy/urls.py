@@ -20,8 +20,7 @@ from django.urls import path, include
 admin.site.site_header = 'Offical Web Site for DeluxeEdit advanced text editor'
 admin.site.site_title = 'Offical Web Site for DeluxeEdit advanced text editor'
 
-    
+
 urlpatterns = [
     path('', include('main.urls')),
     path('admin/', admin.site.urls),
-]
