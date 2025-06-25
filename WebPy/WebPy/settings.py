@@ -26,8 +26,10 @@ SECRET_KEY = 'django-insecure-6l_#0uv((*b!&%4#50wn((j=0j4bda7e=@3t6#h+@o+apn$qf@
 DEBUG = True
 
 ALLOWED_HOSTS = []
+MY_SETTING = [str(i) for i in range(30)]
+PathToInstallFilesOnDev='c/Slask'
 
-
+PathToInstallFilesExtOnDev='.msix'
 # Application definition
 
 INSTALLED_APPS = [
