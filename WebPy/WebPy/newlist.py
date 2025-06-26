@@ -21,7 +21,8 @@ if os.path.isdir( settins. PathOnPAN)
 else
     pathtouse=    settins.PathOnPI
 
-   result = getfiles( pathtouse, settins.Extension)
+   result = getfiles( pathtouse=
+
 
 
     html = '<html lang="en"><body>It is now %s.</body></html>' % now

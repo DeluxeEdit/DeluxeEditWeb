@@ -27,9 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 MY_SETTING = [str(i) for i in range(30)]
-PathToInstallFilesOnDev='c/Slask'
+PathOnPAN='c:/Slask'
 
-PathToInstallFilesExtOnDev='.msix'
+PathOnPI=''
+Extension='.msix'
 # Application definition
 
 INSTALLED_APPS = [
