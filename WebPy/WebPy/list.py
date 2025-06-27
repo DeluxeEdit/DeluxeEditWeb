@@ -21,8 +21,10 @@ if os.path.isdir( settins. PathOnPAN)
 else
     pathtouse=    settins.PathOnPI
 
-   result = getfiles( pathtouse, settins.Extension)
+result = getfiles( pathtouse, settins.Extension)
+for file in result
+    output=output % '<a src="'% file %'">'% file %'"/a>'
 
 
-    html = '<html lang="en"><body>It is now %s.</body></html>' % now
+    html = '<html lang="en"><body>' % output %'</body></html>'
     return HttpResponse(html)
