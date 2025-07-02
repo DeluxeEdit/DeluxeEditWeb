@@ -22,5 +22,6 @@ admin.site.site_title = 'Offical Web Site for DeluxeEdit advanced text editor'
 
 
 urlpatterns = [
-    path('', include('main.urls')),
-    path('admin/', admin.site.urls),
+     path("", views.index, name="index"),
+     path("list", views.list, name="list"), 
+     ]
