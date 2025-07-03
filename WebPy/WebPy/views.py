@@ -26,7 +26,7 @@ def list(request):
     files = getfiles( pathtouse, settins.Extension)
     output= ", ".join([f.path for f in files ])
 
-    return HttpResponse(output)
+    return HttpResponse(files)
 def index(request):
 
 
