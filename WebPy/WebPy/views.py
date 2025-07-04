@@ -1,6 +1,10 @@
+from django.template import loader
 from django.http import HttpResponse
 import os
 from django.conf import settings
+
+template = loader.get_template('templates/deluxeedithtml/index.html')
+files=[]
 
 def    getfiles(path, name):
     result=[]
@@ -26,14 +30,14 @@ def list(request):
     files = getfiles( pathtouse, settins.Extension)
     output= ", ".join([f.path for f in files ])
 
-    return HttpResponse(files)
-def index(request):
+    return HttpResponse(template.render())
 
+
+def index(request):
+    return HttpResponse(template.render())
+
+    
 
     """atest_question_list = Question.objects.order_by("-pub_date")[:5]
     """
-    output=""
-    return HttpResponse(output)
 
-
-# Leave the rest of the views (detail, results, vote) unchanged
