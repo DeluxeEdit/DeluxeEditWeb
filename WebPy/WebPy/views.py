@@ -1,9 +1,10 @@
-from django.template import loader
+from  django.template.loaders.filesystem import Loader
 from django.http import HttpResponse
 import os
 from django.conf import settings
+from django.shortcuts import render
 
-template = loader.get_template('templates/deluxeedithtml/index.html')
+# template = loader.get_template('templates/deluxeedithtml/index.html')
 files=[]
 
 def    getfiles(path, name):
@@ -29,12 +30,12 @@ def list(request):
 
     files = getfiles( pathtouse, settins.Extension)
     output= ", ".join([f.path for f in files ])
-
-    return HttpResponse(template.render())
+    return render(request, 'deluxeedithtml', context=None)
 
 
 def index(request):
-    return HttpResponse(template.render())
+    return render(request, 'deluxeedithtml', context=None)
+
 
     
 
