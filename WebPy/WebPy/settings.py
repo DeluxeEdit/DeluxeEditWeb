@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6l_#0uv((*b!&%4#50wn((j=0j4bda7e=@3t6#h+@o+apn$qf@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 MY_SETTING = [str(i) for i in range(30)]
 PathOnPAN='c:/Slask'
 
