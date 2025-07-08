@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 MY_SETTING = [str(i) for i in range(30)]
-PathOnPAN='c:/Slask'
+PathOnPAN=r"c:\Slask"
 
 PathOnPI=''
 Extension='.msix'

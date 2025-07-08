@@ -4,7 +4,6 @@ import os
 from django.conf import settings
 from django.shortcuts import render
 
-# template = loader.get_template('templates/deluxeedithtml/index.html')
 files=[]
 
 def    getfiles(path, name):
@@ -30,11 +29,12 @@ def list(request):
 
     files = getfiles( pathtouse, settins.Extension)
     output= ", ".join([f.path for f in files ])
-    return render(request, 'deluxeedithtml', context=None)
+    return render(request, "deluxeedithtml", context=None)
+
 
 
 def index(request):
-    return render(request, 'deluxeedithtml', context=None)
+    return render(request, "deluxeedithtml" , context=None)
 
 
     
