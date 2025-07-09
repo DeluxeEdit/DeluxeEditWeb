@@ -4,8 +4,6 @@ import os
 from django.conf import settings
 from django.shortcuts import render
 
-files=[]
-
 def    getfiles(path, name):
     result=[]
 
@@ -28,13 +26,12 @@ def list(request):
         pathtouse=settins.PathOnPI
 
     files = getfiles( pathtouse, settins.Extension)
-    output= ", ".join([f.path for f in files ])
-    return render(request, "deluxeedithtml", context=None)
+    return render(request, "deluxeedithtml")
 
 
 
 def index(request):
-    return render(request, "deluxeedithtml" , context=None)
+    return render(request, "deluxeedithtml")
 
 
     
