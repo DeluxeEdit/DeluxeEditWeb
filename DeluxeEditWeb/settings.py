@@ -28,18 +28,16 @@ SECRET_KEY = 'django-insecure-e4ll8r(5ae#ih%n$v&$mrv4*0o34w&_c7sz)ush^+84#ipbc6j
 DEBUG = True
 
 ALLOWED_HOSTS =['localhost']
+app_label= 'DeluxeEditWeb'
 
-
-# Application definition
+SITE_ID = 1
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
     'django.contrib.staticfiles',
-'DeluxeEditWeb',
+    'DeluxeEditWeb',
 ]
 
 MIDDLEWARE = [
