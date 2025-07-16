@@ -3,7 +3,9 @@ from django.http import HttpResponse
 import os
 from django.conf import settings
 from django.shortcuts import render
-
+"""loader=Loader('deluxeedithtml')
+template = loader.get_template('deluxeedithtml')
+"""
 def    getfiles(path, name):
     result=[]
 
@@ -31,11 +33,11 @@ def list(request):
 
 
 def index(request):
+    """atest_question_list = Question.objects.order_by("-pub_date")[:5]
+    """
     return render(request, "deluxeedithtml")
 
 
     
 
-    """atest_question_list = Question.objects.order_by("-pub_date")[:5]
-    """
-
+    
