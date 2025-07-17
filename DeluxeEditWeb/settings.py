@@ -36,7 +36,6 @@ INSTALLED_APPS = [
      "DeluxeEditWeb.apps.DeluxeEditWebAppConfig",
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
-    'DeluxeEditWeb',
 ]
 
 MIDDLEWARE = [
