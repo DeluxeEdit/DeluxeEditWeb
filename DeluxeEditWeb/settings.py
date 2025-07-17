@@ -33,7 +33,7 @@ SITE_ID = 1
 
 INSTALLED_APPS = [
     'django.contrib.sites',
-    # 'django.contrib.flatpages',
+     "DeluxeEditWeb.apps.DeluxeEditWebAppConfig",
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
     'DeluxeEditWeb',
