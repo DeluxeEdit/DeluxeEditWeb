@@ -1,8 +1,8 @@
 from django.db import models
-import django.contrib.auth.models
+"""import django.contrib.auth.models
 class Permission:
      app_label = 'DeluxeEditWeb'
-
+"""
 class Meta:
     app_label = 'DeluxeEditWeb'
 
