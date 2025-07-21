@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Meta
+from .models import FileInfo 
 
-admin.site.register(Meta)
+admin.site.register(FileInfo)
 

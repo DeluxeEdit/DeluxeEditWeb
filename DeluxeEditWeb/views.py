@@ -1,6 +1,7 @@
 from  django.template.loaders.filesystem import Loader
 from django.http import HttpResponse
 import os
+from .models import FileInfo
 from django.conf import settings
 from django.shortcuts import render
 """loader=Loader('deluxeedithtml')
@@ -13,7 +14,7 @@ def    getfiles(path, name):
         if name in files:
             fullpath=path=os.path.join(root, filename)
             mod=os.path.getmtime(  fullpath )
-            item= FileItem()
+            item= FileInfo()
             item.path=fullpath
             item.modified=mod
             result.append(item)
@@ -27,6 +28,7 @@ def list(request):
     else:
         pathtouse=settins.PathOnPI
 
+  
     files = getfiles( pathtouse, settins.Extension)
     return render(request, "deluxeedithtml")
 
