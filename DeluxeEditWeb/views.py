@@ -14,7 +14,7 @@ def    getfiles(path, name):
         if name in files:
             fullpath=path=os.path.join(root, filename)
             mod=os.path.getmtime(  fullpath )
-            item= FileInfo()
+            item=FileInfo()
             item.path=fullpath
             item.modified=mod
             result.append(item)

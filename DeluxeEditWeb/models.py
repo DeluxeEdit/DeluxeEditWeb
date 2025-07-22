@@ -3,6 +3,7 @@ from django.db import models
 class Permission:
      app_label = 'DeluxeEditWeb'
 """
+
 class FileInfo(models.Model):
     path = models.CharField()
     modified = models.DateTimeField()
