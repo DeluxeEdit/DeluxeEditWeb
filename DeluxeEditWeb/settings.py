@@ -28,12 +28,12 @@ SECRET_KEY = 'django-insecure-e4ll8r(5ae#ih%n$v&$mrv4*0o34w&_c7sz)ush^+84#ipbc6j
 DEBUG = True
 
 ALLOWED_HOSTS =['localhost']
-
 SITE_ID = 1
 
 INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.admin',
+'django.contrib.auth',
      "DeluxeEditWeb.apps.DeluxeEditWebAppConfig",
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',

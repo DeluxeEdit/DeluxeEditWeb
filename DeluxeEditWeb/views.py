@@ -4,6 +4,8 @@ import os
 from .models import FileInfo
 from django.conf import settings
 from django.shortcuts import render
+from django.contrib.auth.models import AnonymousUser
+anoun=AnonymousUser()
 """loader=Loader('deluxeedithtml')
 template = loader.get_template('deluxeedithtml')
 """
@@ -22,7 +24,7 @@ def    getfiles(path, name):
     return  result 
 
 
-def list(request):
+def files(request):
     if os.path.isdir( settins.PathOnPAN):
         pathtouse=settins.PathOnPAN
     else:

@@ -1,8 +1,13 @@
 from django.db import models
-"""import django.contrib.auth.models
+# from django.conf import settings
+"""from django.contrib.auth.models import Permission
+
 class Permission:
-     app_label = 'DeluxeEditWeb'
+    natur1al_key='c'
+    app_label = 'DeluxeEditWeb'
 """
+
+# settings.configure(DEBUG=True)
 
 class FileInfo(models.Model):
     path = models.CharField()
