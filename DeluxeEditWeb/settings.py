@@ -33,7 +33,8 @@ SITE_ID = 1
 INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.admin',
-'django.contrib.auth',
+    'django.contrib.messages',
+    'django.contrib.auth',
      "DeluxeEditWeb.apps.DeluxeEditWebAppConfig",
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
