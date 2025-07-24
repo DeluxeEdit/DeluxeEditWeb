@@ -4,8 +4,11 @@ import os
 from .models import FileInfo
 from django.conf import settings
 from django.shortcuts import render
-from django.contrib.auth.models import AnonymousUser
-anoun=AnonymousUser()
+from django.contrib.auth.models import User
+user = User.objects.get(username="admin")
+#user.is_staff = True
+#user.is_admin = True
+#user.save()
 """loader=Loader('deluxeedithtml')
 template = loader.get_template('deluxeedithtml')
 """
