@@ -8,7 +8,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>7a1285b6-fcb3-43c6-9b40-1a66f4c6f33c</ProjectGuid>
+    <ProjectGuid>9e6c2898-de19-4dd2-902e-bc5c085a65f2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <StartupFile>manage.py</StartupFile>
@@ -37,7 +37,10 @@
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
     <Compile Include="manage.py" />
-    <Compile Include="app\settings.py" />
+    <Compile Include="DeluxeEditWeb\__init__.py" />
+    <Compile Include="DeluxeEditWeb\settings.py" />
+    <Compile Include="DeluxeEditWeb\urls.py" />
+    <Compile Include="DeluxeEditWeb\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -49,6 +52,7 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="DeluxeEditWeb\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />

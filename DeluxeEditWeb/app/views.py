@@ -5,33 +5,7 @@ Definition of views.
 from datetime import datetime
 from django.shortcuts import render
 from django.http import HttpRequest
-from .models import FileInfo
-from django.conf import settings
 
-def    getfiles(path, name):
-    result=[]
-
-    for root, dir, files in os.walk(path):
-        if name in files:
-            fullpath=path=os.path.join(root, name)
-            mod=os.path.getmtime(  fullpath )
-            item=FileInfo()
-            item.path=fullpath
-            item.modified=mod
-            result.append(item)
-
-    return  result 
-
-
-def files(request):
-    if os.path.isdir( settins.PathOnPAN):
-        pathtouse=settins.PathOnPAN
-    else:
-        pathtouse=settins.PathOnPI
-
-  
-    files = getfiles( pathtouse, settins.Extension)
-    return render(request, "deluxeedithtml")
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)

@@ -16,15 +16,11 @@ import posixpath
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-Extension=".msix"
-PathOnPAN=r"c:\Slask"
-PathOnPI=""
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'de10066d-547f-42a9-bb0f-805a84e4da03'
+SECRET_KEY = '0b9e2183-bb4c-4f9e-9d9d-911da09fa06b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
