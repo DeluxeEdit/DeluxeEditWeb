@@ -1,7 +1,10 @@
-"""
-Definition of models.
-"""
-
 from django.db import models
 
-# Create your models here.
+
+# settings.configure(DEBUG=True)
+
+class FileInfo(models.Model):
+    path = models.CharField()
+    modified = models.DateTimeField()
+
+
