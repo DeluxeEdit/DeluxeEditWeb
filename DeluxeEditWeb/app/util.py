@@ -1,16 +1,16 @@
 import os
 from .models import FileInfo
-def    getfiles(path, name):
-    result=[]
+class Util: 
+    def    getFiles(path, name):
+        result=[]
 
-    for root, dir, files in os.walk(path):
-        if name in files:
-            fullpath=path=os.path.join(root, name)
-            mod=os.path.getmtime(  fullpath )
-            item=FileInfo()
-            item.path=fullpath
-            item.modified=mod
-            result.append(item)
+        for root, dir, files in os.walk(path):
+            if name in files:
+                item=FileInfo()
+                item.path=os.path.join(root, name)
+                item.modified=os.path.getmtime(  item.path )
+                result.append(item)
 
-    return  result 
+
+        return  result 
 
