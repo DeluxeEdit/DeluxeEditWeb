@@ -1,6 +1,7 @@
 import os
 from .models import FileInfo
 class Util: 
+    @staticmethod
     def    getFiles(path, name):
         result=[]
 
