@@ -1,8 +1,8 @@
 import os
-from .models import FileInfo
+from ..models import FileInfo
 class Util: 
     @staticmethod
-    def    getFiles(path, name):
+    def getFiles(path, name):
         result=[]
 
         for root, dir, files in os.walk(path):

@@ -5,6 +5,7 @@
     <Name>DeluxeEditWeb</Name>
     <RootNamespace>DeluxeEditWeb</RootNamespace>
     <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -33,8 +34,7 @@
   <ItemGroup>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
-    <Compile Include="app\tests.py" />
-    <Compile Include="app\util.py">
+    <Compile Include="app\utils\util.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="app\views.py" />
@@ -49,6 +49,7 @@
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
+    <Folder Include="app\utils\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
     <Folder Include="app\static\app\content\" />

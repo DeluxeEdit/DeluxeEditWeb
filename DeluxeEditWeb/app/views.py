@@ -4,18 +4,20 @@ Definition of views.
 
 from asyncio.windows_events import NULL
 from datetime import datetime
+from inspect import getfile
 from django.shortcuts import render
 from django.http import HttpRequest
 from django.conf import settings
-from util import Util
+from .utils.util import  * #getFiles   
 import os
+
 
 def files(request):
     if os.path.isdir( settings.PathOnPAN):
         pathtouse=settings.PathOnPAN
     else:
         pathtouse=settings.PathOnPI
-
+        files=[]
         files = Util.getFiles( pathtouse, settings.Extension)
     assert isinstance(request, HttpRequest)
     return render(
