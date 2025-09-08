@@ -1,10 +1,7 @@
 """
 Definition of views.
 """
-
-from asyncio.windows_events import NULL
 from datetime import datetime
-from inspect import getfile
 from django.shortcuts import render
 from django.http import HttpRequest
 from django.conf import settings
@@ -22,7 +19,7 @@ def files(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/files.html',NULL)
+        'app/files.html',None)
         
 
 
